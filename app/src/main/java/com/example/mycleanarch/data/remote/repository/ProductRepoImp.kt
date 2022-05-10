@@ -1,7 +1,8 @@
 package com.example.mycleanarch.data.remote.repository
 
 import com.example.mycleanarch.data.remote.ApiService
-import com.example.mycleanarch.data.remote.dto.toRecipe
+
+import com.example.mycleanarch.data.remote.mapper.toRecipe
 import com.example.mycleanarch.domain.RecipeRepository
 import com.example.mycleanarch.domain.entity.Receipe
 import javax.inject.Inject
