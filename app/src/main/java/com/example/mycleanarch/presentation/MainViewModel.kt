@@ -55,7 +55,7 @@ class MainViewModel @Inject constructor(
             .onFailure { it.handleEmailError() }
     }
 
-    fun Throwable.handleEmailError() {
+    private fun Throwable.handleEmailError() {
         when (this) {
             is EmailExceptionIsEmpty -> error.value = "Please enter your email"
             is EmailExceptionIsNotValid -> error.value = "Please enter a valid email"
